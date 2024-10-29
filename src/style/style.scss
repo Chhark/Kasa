@@ -256,7 +256,7 @@ a{
     color: #fff;
     border-radius: 5px;
     padding: 5px;
-    width: 97%;
+    width: 98%;
     align-items: center;
     justify-content: space-between;
 
@@ -274,15 +274,19 @@ a{
 .p{
     background-color: #f6f6f6;
     margin: 0;
-    width: 100%;
+    width: 98%;
     transform-origin: top;
-    transform: scaleY(0);
+    //transform: scaleY(0);
+    opacity: 0;
+    max-height: 0px;
     transition: all 0.4s ease;
 }
 
 .p.actives {
-    transform: scaleY(1);
+    //transform: scaleY(1);
+    opacity: 1;
     padding: 16px 5px;
+    max-height: 300px;
 }
 
 
@@ -342,6 +346,19 @@ a{
         gap: 20px;
     }
 
+    .logement-card{
+        display: flex;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        width: 70vw;
+        height: 70vw;
+        align-items: end;
+        justify-content: start;
+        padding: 20px;
+    }
+
     .footer{
         justify-content: center;
         text-align: center;
@@ -382,7 +399,7 @@ a{
         flex-direction: column;
 
         h1{
-            font-size: 18px;
+            font-size: 30px;
         }
         .subtitle{
             margin-bottom: 0px;
@@ -405,11 +422,11 @@ a{
             }
     
             p{
-                width: 40px;
+                width: 70px;
                 text-align: right;
-                margin-right: 15px;
+                margin-right: 10px;
                 color: $primary-color;
-                font-size: 12px;
+                font-size: 15px;
                 order: 2;
     
             }
@@ -432,7 +449,7 @@ a{
         }
     }
     .tag{
-        font-size: 10px;
+        font-size: 15 px;
     }
     .section-3{
         width: 100%;

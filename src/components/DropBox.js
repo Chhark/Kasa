@@ -9,9 +9,9 @@ function DropBox({title , content}){
     return(
         <div className="dropbox">
             <div className="dropdown" onClick={toogle}><h3 className="dropdown-title">{title}</h3><img src={arrow} className={Open === true ? "active" : undefined} /></div>
-            {Open === true &&
+            {typeof content === "string" ? (
             <p className={`p ${Open === true ? "actives" : ""}`}>{content}</p>
-            }
+            ) : (<div className={`p ${Open === true ? "actives" : ""}`}>{content}</div>)}
         </div>
     )
 }
